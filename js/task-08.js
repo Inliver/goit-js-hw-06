@@ -22,13 +22,15 @@ function onFormSubmit(e) {
     if (e.currentTarget.elements.email.value === '') {
         window.alert("Поле пошта є обов'язковим")
         return;
-    } else if (e.currentTarget.elements.password.value === ''){
+    } 
+    if (e.currentTarget.elements.password.value === '') {
         window.alert("Поле пароль є обов'язковим");
         return;
-    } else {
-        formData.mail = e.currentTarget.elements.email.value;
-        formData.pass = e.currentTarget.elements.password.value;
-     }
+    } 
+
+    formData.mail = e.currentTarget.elements.email.value;
+    formData.pass = e.currentTarget.elements.password.value;
+     
 
     console.log(formData)
     window.alert("Вхід підтвердженно")
