@@ -14,7 +14,7 @@ const images = [
 ];
 
 const galeryEl = document.querySelector(".gallery");
-galeryEl.style = "display: flex; padding: 0px; ";
+galeryEl.style = "display: flexbox; padding: 0px; ";
 
 let galery = [];
 
@@ -35,7 +35,7 @@ let galery = [];
 
 
  const secondEl = images.map(({ url, alt }) => {
- const listEl2 = `<li style="display: flex; padding: 5px; background-color: tomato;">
+ const listEl2 = `<li style="display: flexbox; padding: 5px;">
   <img src="${url}" alt="${alt}" width = "300px" />
 </li>`
    return listEl2;
