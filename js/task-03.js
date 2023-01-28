@@ -16,7 +16,7 @@ const images = [
 const galeryEl = document.querySelector(".gallery");
 galeryEl.style = "display: flexbox; padding: 0px; ";
 
-let galery = [];
+// let galery = [];
 
 // images.forEach(({ url, alt }) => {
 //   const listEl = document.createElement("li")
