@@ -18,18 +18,18 @@ galeryEl.style = "display: flex; padding: 0px; ";
 
 let galery = [];
 
-images.forEach(({ url, alt }) => {
-  const listEl = document.createElement("li")
-  listEl.style = "display: flex; padding: 5px; background-color: violet";
-  const imageEl = document.createElement("img");
-  imageEl.src = url;
-  imageEl.alt = alt;
-  imageEl.width = 300;
-  listEl.appendChild(imageEl)
-  galery.push(listEl)
-})
+// images.forEach(({ url, alt }) => {
+//   const listEl = document.createElement("li")
+//   listEl.style = "display: flex; padding: 5px; background-color: violet";
+//   const imageEl = document.createElement("img");
+//   imageEl.src = url;
+//   imageEl.alt = alt;
+//   imageEl.width = 300;
+//   listEl.appendChild(imageEl)
+//   galery.push(listEl)
+// })
 
-galeryEl.append(...galery)
+// galeryEl.append(...galery)
 
 
 
@@ -43,7 +43,7 @@ galeryEl.append(...galery)
 
  galeryEl.insertAdjacentHTML('beforeEnd', secondEl.join(''))
 
-console.log(secondEl)
+// console.log(secondEl)
 
 // Используй массив объектов images для создания 
 // элементов < img > вложенных в < li >.Для создания разметки используй 
